@@ -17,7 +17,7 @@ import javax.persistence.Table;
         query = "SELECT t FROM Task AS t ORDER BY t.id DESC"
     )
 })
-@Table(name = "tasks")
+@Table(name = "task")
 public class Task {
     @Id
     @Column(name = "id")
