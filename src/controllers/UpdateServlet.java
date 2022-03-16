@@ -30,7 +30,7 @@ public class UpdateServlet extends HttpServlet {
             // 該当のIDのタスク1件のみをデータベースから取得
             Task t = em.find(Task.class, (Integer)(request.getSession().getAttribute("task_id")));
 
-            // フォームの内容を各フィールドに上書き
+            // 上書き
 
             String content = request.getParameter("content");
             t.setContent(content);
